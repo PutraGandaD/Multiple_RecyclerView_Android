@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.putragandad.multiplerv"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.putragandad.multiplerv"
@@ -26,6 +26,12 @@ android {
             )
         }
     }
+
+    buildFeatures {
+        viewBinding = true
+        dataBinding = true
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
